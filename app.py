@@ -44,7 +44,7 @@ st.markdown("""
     /* Force full width layout with modern gradient background */
     .main .block-container {
         padding: clamp(15px, 3vw, 25px) !important;
-        max-width: 500px !important;
+        max-width: 90vw !important;
         margin: clamp(20px, 4vw, 40px) auto !important;
         background: rgba(255, 255, 255, 0.85) !important;
         border-radius: clamp(20px, 4vw, 30px) !important;
@@ -338,7 +338,7 @@ st.markdown("""
     /* Ensure full width usage with modern background */
     .block-container {
         padding: clamp(15px, 3vw, 25px) !important;
-        max-width: 500px !important;
+        max-width: 90vw !important;
         background: rgba(255, 255, 255, 0.85) !important;
         border-radius: clamp(20px, 4vw, 30px) !important;
         margin: clamp(20px, 4vw, 40px) auto !important;
@@ -365,13 +365,13 @@ st.markdown("""
     /* Very small mobile screens */
     @media (max-width: 360px) {
         .main .block-container {
-            max-width: 85vw !important;
+            max-width: 90vw !important;
             margin: 10px auto !important;
             padding: clamp(10px, 2vw, 15px) !important;
         }
         
         .block-container {
-            max-width: 85vw !important;
+            max-width: 90vw !important;
             margin: 10px auto !important;
             padding: clamp(10px, 2vw, 15px) !important;
         }
@@ -397,13 +397,13 @@ st.markdown("""
         }
         
         .main .block-container {
-            max-width: 75vw !important;
+            max-width: 90vw !important;
             margin: 15px auto !important;
             padding: clamp(12px, 2.5vw, 20px) !important;
         }
         
         .block-container {
-            max-width: 75vw !important;
+            max-width: 90vw !important;
             margin: 15px auto !important;
             padding: clamp(12px, 2.5vw, 20px) !important;
         }
@@ -417,12 +417,12 @@ st.markdown("""
         }
         
         .main .block-container {
-            max-width: 65vw !important;
+            max-width: 90vw !important;
             margin: 25px auto !important;
         }
         
         .block-container {
-            max-width: 65vw !important;
+            max-width: 90vw !important;
             margin: 25px auto !important;
         }
     }
@@ -435,7 +435,12 @@ st.markdown("""
         }
         
         .main .block-container {
-            max-width: 450px !important;
+            max-width: 90vw !important;
+            margin: 40px auto !important;
+        }
+        
+        .block-container {
+            max-width: 90vw !important;
             margin: 40px auto !important;
         }
     }
