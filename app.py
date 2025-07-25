@@ -421,7 +421,7 @@ if uploaded_file:
     # Show modern styled image with perfect centering
     img = Image.open(uploaded_file).convert('RGB')
     st.markdown('<div class="image-container">', unsafe_allow_html=True)
-    st.image(img, width=180, caption="", use_column_width=False)
+    st.image(img, width=180, caption="", use_container_width=False)
     st.markdown('</div>', unsafe_allow_html=True)
 else:
     st.markdown('''
