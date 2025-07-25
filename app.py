@@ -44,12 +44,13 @@ st.markdown("""
     /* Force full width layout with modern gradient background */
     .main .block-container {
         padding: clamp(15px, 3vw, 25px) !important;
-        max-width: 800px !important;
-        margin: clamp(20px, 4vw, 40px) clamp(30px, 6vw, 60px) !important;
-        background: rgba(255, 255, 255, 0.95) !important;
+        max-width: 500px !important;
+        margin: clamp(20px, 4vw, 40px) auto !important;
+        background: rgba(255, 255, 255, 0.85) !important;
         border-radius: clamp(20px, 4vw, 30px) !important;
         box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15) !important;
-        backdrop-filter: blur(10px) !important;
+        backdrop-filter: blur(15px) !important;
+        border: 1px solid rgba(255, 255, 255, 0.3) !important;
     }
     
     .stApp {
@@ -105,13 +106,13 @@ st.markdown("""
     
     /* Modern card-like content wrapper */
     .content-card {
-        background: rgba(255, 255, 255, 0.98) !important;
+        background: rgba(255, 255, 255, 0.9) !important;
         border-radius: clamp(15px, 3vw, 25px) !important;
         padding: clamp(25px, 5vw, 40px) !important;
         margin: clamp(20px, 4vw, 30px) 0 !important;
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1) !important;
-        border: 1px solid rgba(255, 255, 255, 0.3) !important;
-        backdrop-filter: blur(10px) !important;
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12) !important;
+        border: 1px solid rgba(255, 255, 255, 0.4) !important;
+        backdrop-filter: blur(20px) !important;
     }
     
     /* Custom Footer - Compact bottom area */
@@ -337,11 +338,13 @@ st.markdown("""
     /* Ensure full width usage with modern background */
     .block-container {
         padding: clamp(15px, 3vw, 25px) !important;
-        max-width: 800px !important;
-        background: rgba(255, 255, 255, 0.95) !important;
+        max-width: 500px !important;
+        background: rgba(255, 255, 255, 0.85) !important;
         border-radius: clamp(20px, 4vw, 30px) !important;
-        margin: clamp(20px, 4vw, 40px) clamp(30px, 6vw, 60px) !important;
+        margin: clamp(20px, 4vw, 40px) auto !important;
         box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15) !important;
+        backdrop-filter: blur(15px) !important;
+        border: 1px solid rgba(255, 255, 255, 0.3) !important;
     }
     
     /* Additional background coverage */
@@ -373,6 +376,11 @@ st.markdown("""
         .custom-footer {
             padding: 5px 15px 15px;
         }
+        
+        .main .block-container {
+            max-width: 85vw !important;
+            margin: 15px auto !important;
+        }
     }
     
     /* Tablet optimizations */
@@ -381,6 +389,11 @@ st.markdown("""
             max-width: 130px !important;
             max-height: 130px !important;
         }
+        
+        .main .block-container {
+            max-width: 70vw !important;
+            margin: 25px auto !important;
+        }
     }
     
     /* Desktop optimizations */
@@ -388,6 +401,11 @@ st.markdown("""
         .uploaded-image {
             max-width: 150px !important;
             max-height: 150px !important;
+        }
+        
+        .main .block-container {
+            max-width: 450px !important;
+            margin: 40px auto !important;
         }
     }
 </style>
