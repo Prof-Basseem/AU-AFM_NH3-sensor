@@ -365,13 +365,13 @@ st.markdown("""
     /* Very small mobile screens */
     @media (max-width: 360px) {
         .main .block-container {
-            max-width: 70vw !important;
+            max-width: 85vw !important;
             margin: 10px auto !important;
             padding: clamp(10px, 2vw, 15px) !important;
         }
         
         .block-container {
-            max-width: 70vw !important;
+            max-width: 85vw !important;
             margin: 10px auto !important;
             padding: clamp(10px, 2vw, 15px) !important;
         }
